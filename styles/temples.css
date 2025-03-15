@@ -72,6 +72,10 @@ main h2 {
     width: 100%;
 }
 
+.container {
+    display: grid;
+}
+
 
 figure {
     display: flex;
@@ -134,7 +138,6 @@ footer p {
 
 
     .container {
-            display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 25px;
             place-items: center;
