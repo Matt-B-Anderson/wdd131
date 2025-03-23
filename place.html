@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matthew Anderson</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Matthew Anderson Place Page">
+    <meta name="author" content="Matthew Anderson">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="place-title">Ohio</h1>
+        </header>
+        <main class="main-content">
+            <div class="image-container">
+                <div class="image large-image">
+                    <img src="images/deer-large.webp" alt="Male White-Tailed Deer">
+                </div>
+                <div class="image small-image">
+                    <img src="images/deer-small.webp" alt="Fawn White-Tailed Deer">
+                </div>
+            </div>
+            <div class="data-section">
+                <h2>Data</h2>
+                <ul>
+                    <li>
+                        <span>
+                            <p>Area: </p>
+                            <p>44,825 sq mi</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Population: </p>
+                            <p>11,883,304</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Capital: </p>
+                            <p>Columbus</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Languages: </p>
+                            <p>English, Spanish</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Currency: </p>
+                            <p>USD</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Time Zone: </p>
+                            <p>UTC-5, UTC-4 (summer)</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Calling Code: </p>
+                            <p>+1</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Internet TLD: </p>
+                            <p>.gov</p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="weather-section">
+                <h2>Weather</h2>
+                <span class="weather-icon mobile">🌤️</span>
+                <img src="images/weather_icon.svg" alt="Weather Icon" class="weather-icon deskop">
+                <ul>
+                    <li>
+                        <span>
+                            <p>Temperature: </p>
+                            <p id="temperature">46°F </p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Conditions: </p>
+                            <p>Light Rain</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Wind: </p>
+                            <p id="wind">10 mph</p>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <p>Wind Chill: </p>
+                            <span id="windChill">
+                            </span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> Matthew Brian Anderson USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/place.js"></script>
+</body>
+
+</html>
