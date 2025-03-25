@@ -84,7 +84,7 @@ body {
     text-align: center;
 }
 
-ul li span {
+ul li div {
     display: flex;
     flex-direction: row;
     justify-content: center;
