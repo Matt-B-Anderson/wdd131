@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #c70039;
+    --secondary-color: blue;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ body {
 }
 
 .header {
-    background-color: #c70039;
+    background-color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     color: white;
@@ -38,20 +43,16 @@ body {
 
 .image-container {
     text-align: center;
-    width: 100%;
-    border-top: 20px solid blue;
+    border-top: 20px solid var(--secondary-color);
 }
 
 
-.large-image {
+.image img{
     display: block;
-    max-height: 90vh;
     width: 100%;
+    max-height: 90vh;
 }
 
-.small-image {
-    display: none;
-}
 
 .data-section,
 .weather-section {
@@ -67,7 +68,7 @@ body {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     text-align: center;
-    color: #c70039;
+    color: var(--primary-color);
 }
 
 .data-section ul,
@@ -99,6 +100,10 @@ ul li span {
     display: block;
 }
 
+.weather-container img::content {
+    color: white;
+}
+
 .weather-icon {
     height: 50px;
     width: 100%;
@@ -108,7 +113,7 @@ ul li span {
 
 footer {
     text-align: center;
-    background-color: #c70039;
+    background-color: var(--primary-color);
     padding: 1rem;
     color: white;
     width: 100%;
@@ -118,28 +123,18 @@ footer {
 @media screen and (max-width: 414px) {
     .main-content {
         flex-direction: column;
+        height: 100vh;
     }
 
     .image-container {
         flex-direction: column;
         width: 100%;
-        border-bottom: 10px solid #c70039;
+        border-bottom: 10px solid var(--primary-color);
     }
 
     .data-section h2,
     .weather-section h2 {
-        border-bottom: 2px solid #c70039;
-    }
-
-    .large-image {
-        display: none;
-        flex: 3;
-    }
-
-    .small-image {
-        display: block;
-        width: 100%;
-        height: auto;
+        border-bottom: 2px solid var(--primary-color);
     }
 
     .mobile {
@@ -167,14 +162,14 @@ footer {
     .weather-section h2,
     .data-section h2 {
         text-align: left;
-        background-color: blue;
+        background-color: var(--secondary-color);
         width: 100%;
         color: white;
     }
 
     .weather-section {
         position: absolute;
-        top: 900px;
+        top: 800px;
         right: 20px;
         width: 250px;
     }
@@ -187,14 +182,14 @@ footer {
     .weather-container {
         display: flex;
         flex-direction: row;
-        background-color: blue;
+        background-color: var(--secondary-color);
         align-items: center;
     }
     
     .image-container {
         position: absolute;
+        width: 100%;
         top: 75px;
-        height: 100vh;
     }
 
     footer {
