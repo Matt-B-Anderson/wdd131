@@ -1,5 +1,6 @@
 @media (width >=414px) {
-    .container {
+    .temple-container {
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px
     }
 }

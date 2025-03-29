@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matthew Anderson</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Matthew Anderson Temples Page">
+    <meta name="author" content="Matthew Anderson">
+    <link rel="stylesheet" href="./styles/temples.css">
+    <link rel="stylesheet" href="./styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger" aria-label="Toggle menu">
+            ☰
+        </button>
+        <nav class="navbar" id="navbar">
+            <a href="" data-filter="home">Home</a>
+            <a href="" data-filter="old" data-value="1900">Old</a>
+            <a href="" data-filter="new" data-value="2000">New</a>
+            <a href="" data-filter="large" data-value="90000">Large</a>
+            <a href="" data-filter="small" data-value="10000">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temple-container" id="temple-container">
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Matthew Brian Anderson USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/temples.js"></script>
+</body>
+
+</html>

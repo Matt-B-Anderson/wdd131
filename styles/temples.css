@@ -62,7 +62,7 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    max-width: 800px;
+    max-width: 1500px;
     margin: 0 auto;
     justify-self: center;
 }
@@ -72,26 +72,43 @@ main h2 {
     width: 100%;
 }
 
-.container {
+.temple-container {
     display: grid;
 }
 
-
-figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-figure img {
-    width: 100%;
-    height: auto;
-    margin: .5rem;
-
-}
-
-figcaption {
+.card {
+    border: 1px solid #ccc;
+    width: 500px;
+    overflow: hidden;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.9);
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.card p span {
+    font-weight: bold;
+    color: #6A0DAD;
 }
 
 footer {
