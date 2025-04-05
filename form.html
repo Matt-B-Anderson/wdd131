@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matthew Anderson</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Matthew Anderson Product Form Page">
+    <meta name="author" content="Matthew Anderson">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form class="review-form" method="GET" action="review.html" id="review-form">
+            <label for="product">Product Name</label>
+            <select id="product" required>
+              <option value="" disabled selected>Choose a Product ...</option>
+            </select>
+      
+            <label>Overall Rating</label>
+            <div class="rating">
+                <input type="radio" id="fivestar" name="rating" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="rating" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="rating" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="rating" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="rating" value="1" required><label for="onestar"></label>
+            </div>
+      
+            <label for="install-date">Date of Installation</label>
+            <input type="date" id="install-date" required />
+      
+            <fieldset>
+              <legend>Which features did you find useful in the product? <span class="check-all">(Check all that apply)</span></legend>
+              <label><input type="checkbox" name="feature" required/> Durability</label>
+              <label><input type="checkbox" name="feature" required/> Ease of Use</label>
+              <label><input type="checkbox" name="feature" required/> Performance</label>
+              <label><input type="checkbox" name="feature" required/> Design</label>
+            </fieldset>
+      
+            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="review" rows="4"></textarea>
+      
+            <label for="name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="name" />
+      
+            <button type="submit" id="review-form-button">Post Review</button>
+          </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Matthew Brian Anderson USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="./scripts/getdates.js"></script>
+    <script defer src="./scripts/form.js"></script>
+</body>
+
+</html>
