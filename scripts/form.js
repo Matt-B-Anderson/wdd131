@@ -40,13 +40,13 @@ const createSelectOptions = () => {
 }
 
 const createEventListener = () => {
-    const form = document.getElementById("review-form");
-    form.addEventListener("submit", e => {
+    const button = document.getElementById("review-form-button");
+    button.addEventListener("click", e => {
         e.preventDefault();
         let count = parseInt(localStorage.getItem("count")) || 0;
         count++
         localStorage.setItem("count", count)
-        window.location.href = `review.html`;
+        // window.location.href = `review.html`;
     });
 }
 
