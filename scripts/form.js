@@ -39,19 +39,7 @@ const createSelectOptions = () => {
     });
 }
 
-const createEventListener = () => {
-    const button = document.getElementById("review-form-button");
-    button.addEventListener("click", e => {
-        e.preventDefault();
-        let count = parseInt(localStorage.getItem("count")) || 0;
-        count++
-        localStorage.setItem("count", count)
-        // window.location.href = `review.html`;
-    });
-}
-
 createSelectOptions();
-createEventListener();
 
 
 
