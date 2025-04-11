@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodland Hills Accounting Needs Services Page</title>
+    <meta name="description" content="Woodland Hills Accounting Needs services page">
+    <meta name="author" content="Matthew Anderson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/services.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/whan-icon.webp" alt="woodland-hills-accounting-needs-logo" />
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src='./images/office-small.webp' srcset="./images/office-small.webp 400w, ./images/office.webp 1920w"
+                alt="Responsive Image" sizes="(max-width: 415px) 400px, 1920px">
+            <div class="message">
+                <h2>Contact Us</h2>
+                <p>Have any questions, want to set up an appointment?</p>
+                <button onclick="window.location.href='contact.html'">Contact Us</button>
+            </div>
+        </div>
+        <section class="service-list">
+            <h2>What We Offer</h2>
+            <ul>
+                <li><strong>Bookkeeping:</strong> Accurate, up-to-date financial records for individuals and small businesses.
+                </li>
+                <li><strong>Tax Preparation:</strong> Federal, state, and business tax return services with attention to detail.
+                </li>
+                <li><strong>Payroll Services:</strong> Hassle-free payroll processing with tax compliance and direct deposit.
+                </li>
+                <li><strong>Financial Consulting:</strong> Strategic insights to help plan for business growth or personal
+                    budgeting.</li>
+                <li><strong>Audit Support:</strong> Guidance and documentation preparation for IRS or third-party audits.</li>
+            </ul>
+        </section>
+        
+        <section class="pricing-table">
+            <h2>Service Packages</h2>
+            <table>
+                <caption>Basic Comparison of Our Packages</caption>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic</th>
+                        <th>Premium</th>
+                        <th>Enterprise</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monthly Bookkeeping</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Preparation</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️ (Incl. Business)</td>
+                    </tr>
+                    <tr>
+                        <td>Payroll Services</td>
+                        <td>❌</td>
+                        <td>✔️ (Up to 10 Employees)</td>
+                        <td>✔️ (Unlimited)</td>
+                    </tr>
+                    <tr>
+                        <td>Financial Consultations</td>
+                        <td>1/year</td>
+                        <td>3/year</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td>Email/Phone Support</td>
+                        <td>Email Only</td>
+                        <td>Email + Limited Phone</td>
+                        <td>Priority Support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Matthew Brian Anderson USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

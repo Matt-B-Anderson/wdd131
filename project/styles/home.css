@@ -1,0 +1,229 @@
+:root {
+  --primary-color: #6F1A07;
+  --secondary-color: #384D48;
+  --accent1-color: #4F86C6;
+  --background-color: #EBEBEB;
+  --heading-font: "Chakra Petch", sans-serif;
+  --text-font: "Chakra Petch", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  width: auto;
+  background-color: var(--primary-color);
+}
+
+header img {
+  justify-self: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navbar {
+  height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    align-self: flex-end;
+}
+
+.navbar a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+}
+
+.navbar a:active {
+  color: var(--accent1-color);
+}
+
+.hero {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.greeting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: var(--background-color);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.greeting h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.greeting h4 {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.greeting button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.greeting button:hover {
+  background-color: var(--secondary-color);
+}
+
+.subscribe {
+  padding: 4rem 2rem;
+  background-color: var(--background-color);
+}
+
+.message-us-form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.inputs .checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputs .checkbox label {
+  margin-top: 0.25rem;
+}
+
+.inputs span {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid var(--background-color);
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.25rem;
+}
+
+.submit-btn {
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.inspiration {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.inspiration .image {
+  display: flex;
+  justify-content: center;
+}
+
+.inspiration .image img {
+  width: 400px;
+  border-radius: 5px;
+  height: 600px;
+}
+
+.inspiration .message {
+  background-color: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: fit-content;
+}
+
+.inspiration h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.inspiration p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: var(--secondary-color);
+}
+
+.inspiration button {
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inspiration button:hover {
+  background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px;
+}

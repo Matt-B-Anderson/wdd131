@@ -1,0 +1,164 @@
+
+.company-info {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.company-info-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.company-info-content ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+iframe {
+    border: none;
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+}
+
+.our-employees {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.our-employees h1 {
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.employees {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.employees img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.message-us {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message-us h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.message-us-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.inputs span {
+    display: flex;
+    flex-direction: column;
+}
+
+.radios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.radios span {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+}
+
+input[type="text"],
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-bottom: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+}
+
+.check-and-submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submit-btn {
+    padding: 0.7rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+}

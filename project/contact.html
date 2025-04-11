@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodland Hills Accounting Needs Contact Us</title>
+    <meta name="description" content="Woodland Hills Accounting Needs company contact page">
+    <meta name="author" content="Matthew Anderson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/whan-icon.webp" alt="woodland-hills-accounting-needs-logo" />
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src='./images/office-small.webp' srcset="./images/office-small.webp 400w, ./images/office.webp 1920w"
+                alt="Responsive Image" sizes="(max-width: 415px) 400px, 1920px">
+        </div>
+        <div class="company-info">
+            <h1>Company Info</h1>
+            <div class="company-info-content">
+                <ul>
+                    <li>address: 1234 fake dr imaginarycity, 12345 ZZ</li>
+                    <li class="phone-numbers">
+                        phone numbers:
+                        <p>customer support: 1 (123)-4567</p>
+                        <p>services: 1 (987)-6543</p>
+                    </li>
+                    <li>email: whan@gmail.com</li>
+                </ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1857.063389283958!2d-157.93656542365622!3d21.424261293959095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006889331e14b7%3A0x6c624869032f82ed!2s2881%20Waimano%20Home%20Rd%2C%20Pearl%20City%2C%20HI%2096782!5e0!3m2!1sen!2sus!4v1739040862417!5m2!1sen!2sus"
+                    width="500" height="250" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="our-employees">
+            <h1>Our Employees</h1>
+            <div class="employees">
+                <figure>
+                    <img src="images/ceo.webp" alt="CEO" />
+                    <figcaption>CEO - John Doe</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/jane_doe.webp" alt="CPA" />
+                    <figcaption>Lead CPA - Jane Doe</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="message-us">
+            <h1>Message Us</h1>
+            <form class="message-us-form">
+                <div class="inputs">
+                    <span>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+                    </span>
+                    <span>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" />
+                    </span>
+                </div>
+                <div class="radios">
+                    <span>
+                        <input type="radio" name="general-inquiry" id="general-inquiry" />
+                        <label for="general-inquiry">General Inquiry</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="reservation-question" id="reservation-question" />
+                        <label for="reservation-question">Services Question</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="website-suggestion" id="website-suggestion" />
+                        <label for="website-suggestion">Website Suggestion</label>
+                    </span>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="message"></textarea>
+                </div>
+                <div class="check-and-submit">
+                    <button type="submit" class="submit-btn">Contact Us</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Matthew Brian Anderson USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
